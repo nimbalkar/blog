@@ -1,0 +1,10 @@
+{%extends 'base.html'%}
+{%block content%}
+    <div style="margin-top: 100px;">
+	{% for post in posts %}
+		<h1>{{ post.title }}</h1>
+		<p>{{ post.author }} on {{ post.date_posted }}</p>
+		<p>{{ post.content }}</p>
+	{% endfor %}
+</div>
+{%endblock%}
